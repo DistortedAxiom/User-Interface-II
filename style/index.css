@@ -145,7 +145,8 @@ header nav{
 .hero-container h2 {
     font-size: 35px;
     color: white;
-    padding-bottom: 15px;
+    padding-top: 3%;
+    padding-bottom: 3%;
 }
 
 .project-btn {
@@ -168,6 +169,7 @@ header nav{
     flex-wrap: wrap;
     overflow: hidden;
 }
+
 
 .projects-gallery h3 {
     color: white;
