@@ -136,3 +136,27 @@ header nav{
     flex: 33%;
     padding: 8px;
 }
+
+footer {
+    height: 15%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #494949;
+    margin-top: 1.5%;
+}
+
+.contact-container {
+    position: absolute;
+}
+
+.contact-button {
+   background-color: white;
+   border: none;
+   color: black;
+   font-size: 1em;
+   padding: 10px 50px;
+   text-transform: uppercase;
+   font-weight: normal;
+}
