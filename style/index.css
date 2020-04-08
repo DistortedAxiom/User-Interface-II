@@ -55,7 +55,7 @@ header nav{
 
 .nav-brand a {
     color: white;
-    font-size: 30px;
+    font-size: 26px;
     text-decoration: none;
 }
 
@@ -67,8 +67,20 @@ header nav{
 
 .links a {
     color: white;
-    font-size: 23px;
+    font-size: 20px;
     text-decoration: none;
+}
+
+.nav-link {
+    border: 0.5px solid black;
+    width: 140px;
+    padding: 15px;
+    text-align: center;
+}
+
+.nav-link:hover {
+    border: 0.5px solid white;
+    color: gray;
 }
 
 .hero-banner {
@@ -112,10 +124,16 @@ header nav{
     border-radius: 4px;
 }
 
+.project-btn:hover {
+    background: gray;
+    color: white;
+}
+
 .projects-gallery {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    overflow: hidden;
 }
 
 .projects-gallery h3 {
@@ -135,6 +153,10 @@ header nav{
 .column {
     flex: 33%;
     padding: 8px;
+}
+
+.column:hover {
+    transform: scale(1.03);
 }
 
 footer {
@@ -159,4 +181,10 @@ footer {
    padding: 10px 50px;
    text-transform: uppercase;
    font-weight: normal;
+   cursor: pointer;
+}
+
+.contact-button:hover {
+    background-color: gray;
+    color: white;
 }
