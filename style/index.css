@@ -96,6 +96,7 @@ header nav{
     overflow: hidden;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 .hero-container {
@@ -107,6 +108,34 @@ header nav{
 .hero-container h1{
     font-size: 50px;
     color: white;
+}
+
+.name {
+    display: inline-block;
+  	overflow: hidden;
+  	letter-spacing: 2px;
+ 	animation: typing 2s steps(40, end), blink .75s step-end infinite;
+    white-space: nowrap;
+    border-right: 4px solid gray;
+    box-sizing: border-box;
+}
+
+@keyframes typing {
+    from {
+        width: 0%
+    }
+    to {
+        width: 60%
+    }
+}
+
+@keyframes blink {
+    from, to {
+        border-color: transparent
+    }
+    50% {
+        border-color: gray;
+    }
 }
 
 .hero-container h2 {
