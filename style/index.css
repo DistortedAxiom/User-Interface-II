@@ -47,7 +47,7 @@ header nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2%;
+    padding: 1.5%;
 }
 
 .nav-brand {
@@ -79,7 +79,7 @@ header nav{
 .nav-link {
     border: 0.5px solid black;
     width: 8em;
-    padding: 0.6em;
+    padding: 0.8em;
     text-align: center;
 }
 
