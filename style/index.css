@@ -195,30 +195,29 @@ header nav{
 }
 
 footer {
-    height: 15%;
-    width: 100%;
-    display: flex;
     align-items: center;
     justify-content: center;
     background-color: #494949;
     margin-top: 1.5%;
     position: relative;
+    display: block;
+    text-align: center;
 }
 
-.contact-container {
-    position: absolute;
-    padding-bottom: 1%;
-}
 
 .contact-button {
    background-color: white;
    border: none;
    color: black;
    font-size: 1em;
-   padding: 10px 50px;
+   padding: 1% 1%;
    text-transform: uppercase;
    font-weight: normal;
    cursor: pointer;
+   margin-top: 2%;
+   margin-bottom: 0.5%;
+   position: relative;
+   width: 10%;
 }
 
 .contact-button:hover {
@@ -226,12 +225,9 @@ footer {
     color: white;
 }
 
-.social-media {
-    position: absolute;
-    bottom: 0px;
-}
-
-.social-media img {
-    height: 40px;
-    width: 40px;
+.fa {
+    padding: 5px;
+    font-size: 40px;
+    text-decoration: none;
+    color: black;
 }
