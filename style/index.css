@@ -56,7 +56,7 @@ header nav{
 
 .nav-brand a {
     color: white;
-    font-size: 30px;
+    font-size: 1.875rem;
     text-decoration: none;
 }
 
@@ -65,14 +65,14 @@ header nav{
 }
 
 .links {
-    width: 35%;
+    width: 40%;
     display: flex;
     justify-content: space-around;
 }
 
 .links a {
     color: white;
-    font-size: 20px;
+    font-size: 1.25rem;
     text-decoration: none;
 }
 
@@ -84,28 +84,8 @@ header nav{
 }
 
 .nav-link:hover {
-    border: 0.5px solid white;
+    border: 0.03rem solid white;
     color: gray;
-}
-
-@media (max-width: 500px) {
-    header {
-        max-width: 500px;
-    }
-
-    .nav-brand{
-        text-align: center;
-    }
-
-    header nav {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .links a {
-        font-size: 1em;
-    }
-
 }
 
 .hero-banner {
@@ -131,17 +111,22 @@ header nav{
 }
 
 .hero-container h1{
-    font-size: 50px;
+    font-size: 3rem;
     color: white;
 }
 
+.name-container {
+    display: inline-flex;
+}
+
 .name {
+    width: auto;
     display: inline-block;
   	overflow: hidden;
-  	letter-spacing: 2px;
- 	animation: typing 2s steps(40, end), blink .75s step-end infinite;
+  	letter-spacing: 0.125rem;
+ 	animation: typing 2s steps(42, end), blink .75s step-end infinite;
     white-space: nowrap;
-    border-right: 4px solid gray;
+    border-right: 0.25rem solid gray;
     box-sizing: border-box;
 }
 
@@ -150,7 +135,7 @@ header nav{
         width: 0%
     }
     to {
-        width: 60%
+        width: 100%
     }
 }
 
@@ -164,7 +149,7 @@ header nav{
 }
 
 .hero-container h2 {
-    font-size: 35px;
+    font-size: 2.1rem;
     color: white;
     padding-top: 3%;
     padding-bottom: 3%;
@@ -172,8 +157,8 @@ header nav{
 
 .project-btn {
     color: #313131;
-    padding: 10px 24px;
-    font-size: 20px;
+    padding: 0.625rem 1.5rem;
+    font-size: 1.25rem;
     text-decoration: none;
     background: white;
     border-radius: 4px;
@@ -191,10 +176,9 @@ header nav{
     overflow: hidden;
 }
 
-
 .projects-gallery h3 {
     color: white;
-    font-size: 23px;
+    font-size: 1.43rem;
     text-align: center;
     padding-top: 2%;
     padding-bottom: 1%;
@@ -208,7 +192,7 @@ header nav{
 
 .column {
     flex: 33.33%;
-    padding: 8px;
+    padding: 0.5px;
 }
 
 .column:hover {
@@ -220,6 +204,7 @@ header nav{
         flex: 50%;
     }
 }
+
 
 footer {
     height: 12%;
@@ -258,4 +243,57 @@ footer {
 .social-media img {
     height: 2rem;
     width: 2rem;
+}
+
+@media (min-width: 501px) and (max-width: 800px) {
+
+    header {
+        max-width: 800px;
+    }
+
+    .nav-brand{
+        text-align: center;
+    }
+
+    header nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .links a {
+        font-size: 115%;
+    }
+
+    .hero-container h1,
+    .hero-container h2 {
+        font-size: 200%;
+    }
+}
+
+@media (max-width: 500px) {
+    header {
+        max-width: 500px;
+    }
+
+    .nav-brand{
+        text-align: center;
+    }
+
+    header nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .links a {
+        font-size: 80%;
+    }
+
+    .hero-container h1,
+    .hero-container h2 {
+        font-size: 150%;
+    }
+
+    .project-btn {
+        font-size: 80%;
+    }
 }
