@@ -34,6 +34,7 @@ html, body {
   max-width:100%;
 }
 
+
 header {
 	width: 100%;
 	height: 90%;
@@ -64,7 +65,7 @@ header nav{
 }
 
 .links {
-    width: 40%;
+    width: 35%;
     display: flex;
     justify-content: space-around;
 }
@@ -77,14 +78,34 @@ header nav{
 
 .nav-link {
     border: 0.5px solid black;
-    width: 140px;
-    padding: 15px;
+    width: 8em;
+    padding: 0.6em;
     text-align: center;
 }
 
 .nav-link:hover {
     border: 0.5px solid white;
     color: gray;
+}
+
+@media (max-width: 500px) {
+    header {
+        max-width: 500px;
+    }
+
+    .nav-brand{
+        text-align: center;
+    }
+
+    header nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .links a {
+        font-size: 1em;
+    }
+
 }
 
 .hero-banner {
@@ -181,12 +202,12 @@ header nav{
 
 .projects-gallery img {
     width: 100%;
-    height: 50vh;
+    height: 45vh;
     display: flex;
 }
 
 .column {
-    flex: 33%;
+    flex: 33.33%;
     padding: 8px;
 }
 
@@ -194,19 +215,26 @@ header nav{
     transform: scale(1.03);
 }
 
+@media (max-width: 500px) {
+    .column {
+        flex: 50%;
+    }
+}
+
 footer {
-    height: 15%;
+    height: 12%;
     width: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: #494949;
-    margin-top: 1.5%;
+    margin-top: 1%;
     position: relative;
 }
 
 .contact-container {
-    position: absolute;
+    padding-top: 1%;
     padding-bottom: 1%;
 }
 
@@ -215,7 +243,7 @@ footer {
    border: none;
    color: black;
    font-size: 1em;
-   padding: 10px 50px;
+   padding: 1.5vh 1vh;
    text-transform: uppercase;
    font-weight: normal;
    cursor: pointer;
@@ -226,12 +254,8 @@ footer {
     color: white;
 }
 
-.social-media {
-    position: absolute;
-    bottom: 0px;
-}
 
 .social-media img {
-    height: 40px;
-    width: 40px;
+    height: 2rem;
+    width: 2rem;
 }
