@@ -65,8 +65,9 @@ header nav{
 }
 
 .links {
-    width: 40%;
+    width: 50%;
     display: flex;
+    direction: row;
     justify-content: space-around;
 }
 
@@ -78,8 +79,8 @@ header nav{
 
 .nav-link {
     border: 0.5px solid black;
-    width: 140px;
-    padding: 15px;
+    width: 15%;
+    padding: 1.5%;
     text-align: center;
 }
 
