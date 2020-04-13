@@ -1,1 +1,236 @@
 /* Add CSS styling here */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
+}
+
+html, body {
+    height: 100%;
+    font-family: sans-serif;
+    background: black;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+  font-size: 100%;
+}
+
+header {
+	width: 100%;
+	height: 90%;
+    background-color: black;
+}
+
+header nav{
+    background: black;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2%;
+}
+
+.nav-brand {
+    width: 50%;
+}
+
+.nav-brand a {
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.title {
+    font-family: 'Oswald', sans-serif;
+}
+
+.links {
+    width: 50%;
+    display: flex;
+    direction: row;
+    justify-content: space-around;
+}
+
+.links a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.nav-link {
+    border: 0.5px solid black;
+    width: 15%;
+    padding: 1.5%;
+    text-align: center;
+}
+
+.nav-link:hover {
+    border: 0.5px solid white;
+    color: gray;
+}
+
+.hero-banner {
+    background-image: url(../images/herobanner.jpg);
+    background-size: 100%;
+    height: 85%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.hero-container {
+    position: absolute;
+    text-align: center;
+    align-items: center;
+}
+
+.hero-container h1{
+    font-size: 50px;
+    color: white;
+}
+
+.name {
+    display: inline-block;
+  	overflow: hidden;
+  	letter-spacing: 2px;
+ 	animation: typing 2s steps(40, end), blink .75s step-end infinite;
+    white-space: nowrap;
+    border-right: 4px solid gray;
+    box-sizing: border-box;
+}
+
+@keyframes typing {
+    from {
+        width: 0%
+    }
+    to {
+        width: 60%
+    }
+}
+
+@keyframes blink {
+    from, to {
+        border-color: transparent
+    }
+    50% {
+        border-color: gray;
+    }
+}
+
+.hero-container h2 {
+    font-size: 35px;
+    color: white;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.project-btn {
+    color: #313131;
+    padding: 10px 24px;
+    font-size: 20px;
+    text-decoration: none;
+    background: white;
+    border-radius: 4px;
+}
+
+.project-btn:hover {
+    background: gray;
+    color: white;
+}
+
+.projects-gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+
+.projects-gallery h3 {
+    color: white;
+    font-size: 23px;
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 1%;
+}
+
+.projects-gallery img {
+    width: 100%;
+    height: 45vh;
+    display: flex;
+}
+
+.column {
+    display: flex;
+    width: 33.33%;
+    padding: 8px;
+    flex-direction: column;
+}
+
+.column:hover {
+    transform: scale(1.03);
+}
+
+footer {
+    align-items: center;
+    justify-content: center;
+    background-color: #494949;
+    margin-top: 1.5%;
+    position: relative;
+    display: block;
+    text-align: center;
+}
+
+
+.contact-button {
+   background-color: white;
+   border: none;
+   color: black;
+   font-size: 1em;
+   padding: 1% 1%;
+   text-transform: uppercase;
+   font-weight: normal;
+   cursor: pointer;
+   margin-top: 2%;
+   margin-bottom: 0.5%;
+   position: relative;
+}
+
+.contact-button:hover {
+    background-color: gray;
+    color: white;
+}
+
+.fa {
+    padding: 5px;
+    font-size: 40px;
+    text-decoration: none;
+    color: black;
+}
