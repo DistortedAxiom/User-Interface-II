@@ -170,6 +170,7 @@ header nav{
 }
 
 .projects-gallery {
+    background-color: white;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -185,9 +186,10 @@ header nav{
 }
 
 .projects-gallery img {
-    width: 98%;
+    width:80%;
     height: 45vh;
     display: flex;
+    margin-left: 5rem;
 }
 
 .column {
@@ -316,4 +318,61 @@ footer {
     .contact-button {
         font-size: 80%;
     }
+}
+
+.silent-auction-container {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.projects-title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.projects-title {
+    color: white;
+    font-size: 3rem;
+}
+
+.satitle-container {
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid black
+}
+
+.satitle-container h3 {
+    color: black;
+    font-size: 4rem;
+    margin-top: 15rem;
+}
+
+.sabody-container {
+    width: 50%;
+    margin-top: 1rem;
+    margin-left: 2rem;
+}
+
+.sabody-container h4 {
+    font-size: 2rem;
+}
+
+.sabutton-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+}
+
+.sabutton {
+    color: white;
+    padding: 0.625rem 1.5rem;
+    font-size: 1.25rem;
+    text-decoration: none;
+    background: black;
+    border-radius: 4px;
 }
